@@ -5,7 +5,7 @@ FROM openjdk:22-jdk-slim
 WORKDIR /tablas_etiquetas
 
 # Copia el archivo JAR al contenedor
-COPY target/tablas_etiquetas.jar app.jar
+COPY target/tablas_etiquetas-0.0.1-SNAPSHOT.jar app.jar
 
 # Expone el puerto en el que la aplicación escucha (puerto 8080 es común para Spring Boot)
 EXPOSE 8080
